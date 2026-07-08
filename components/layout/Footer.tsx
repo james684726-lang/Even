@@ -22,29 +22,27 @@ export function Footer() {
             </div>
             <div className="space-y-4 w-full">
               <div className="flex flex-col justify-center items-center gap-3 ">
-             <div className="flex items-center justify-start gap-2">
-              {/* <Mail className="w-5 h-5 text-blue-300 flex-shrink-0" />
+                <div className="flex items-center justify-start gap-2">
+                  {/* <Mail className="w-5 h-5 text-blue-300 flex-shrink-0" />
                 <a
                   href="mailto:chmairbnb@outlook.com"
                   className="text-blue-100 hover:text-white transition-colors duration-200"
                 >
                  Email
                 </a> */}
-              </div>   
-              <div className="flex  gap-2 ">
-                <Phone className="w-5 h-5 text-blue-300 flex-shrink-0" />
-                <a
-                  href="tel:+6309890215"
-                  className="text-blue-100 hover:text-white transition-colors duration-200"
-                >
-                  (630) 989-0215
-                </a>
+                </div>
+                <div className="flex  gap-2 ">
+                  <Phone className="w-5 h-5 text-blue-300 flex-shrink-0" />
+                  <a
+                    href="tel:+6309890215"
+                    className="text-blue-100 hover:text-white transition-colors duration-200"
+                  >
+                    (630) 989-0215
+                  </a>
+                </div>
+                <p className="text-blue-300 font-medium">NMLS: 1710678</p>
               </div>
-                 <p className="text-blue-300 font-medium">NMLS: 1710678</p>
-              </div>
-              <div>
-               
-              </div>
+              <div></div>
               {/* <div className="mt-4 items-center flex  justify-center gap-4  p-4 rounded-lg">
             <Link
               target="_blank"
@@ -134,32 +132,29 @@ export function Footer() {
             </div>
           </div>
 
-          
-
           <div className="space-y-4">
             <div className="flex items-center w-full gap-3">
               <div className="mb-8 w-full rounded-lg overflow-hidden border border-blue-400/30">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190255.33850037026!2d-87.8602826!3d41.8348739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0b3ab5f0a3c1e!2sChicago%2C%20IL!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                  width="100%"
-                  height="250"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Coverage Area Map - Illinois"
-                  className="w-full"
-                />
+                <div>
+                  <iframe
+                    src="https://www.google.com/maps?q=Bloomingdale,+IL&output=embed"
+                    width="100%"
+                    height="250"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Coverage Area Map - Bloomingdale, IL"
+                    className="w-full"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-blue-800 mt-8 pt-6 text-center">
-          <p className="text-blue-300 text-sm">
-           
-          </p>
+          <p className="text-blue-300 text-sm"></p>
         </div>
       </div>
     </footer>

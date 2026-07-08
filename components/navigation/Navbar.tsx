@@ -46,15 +46,18 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-1 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-       <Link href="/"> <div className="relative w-38 h-28 md:w-40 md:h-32 flex-shrink-0">
-          <Image
-            src="/img/logo.png"
-            alt="Logo"
-            fill
-            className="object-contain"
-            priority
-          />
-        </div></Link>
+        <Link href="/">
+          {" "}
+          <div className="relative w-38  md:w-42 h-22 flex-shrink-0">
+            <Image
+              src="/img/logo.png"
+              alt="Logo"
+              fill
+              className="object-contain -top-4"
+              priority
+            />
+          </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden sm:flex gap-6 lg:gap-8 text-lg items-center">
@@ -63,7 +66,7 @@ export function Navbar() {
             if (item.subItems) {
               return (
                 <DropdownMenu key={item.href}>
-                  <DropdownMenuTrigger asChild>
+                  <DropdownMenuTrigger>
                     <button
                       className={`relative text-[#04205D] md:hover:text-gray-900 transition-colors text-sm md:text-xl font-medium group flex items-center gap-1 ${
                         isAboutActive() || pathname === item.href
@@ -212,7 +215,7 @@ export function Navbar() {
 
         <Link href="/loan">
           <Button className="bg-transparent hover:bg-transparent border w-20 text-xs border-gray-400 rounded-sm">
-            Apply  <ExternalLink className="w-2 h-2 text-[#04205D]" />
+            Apply <ExternalLink className="w-2 h-2 text-[#04205D]" />
           </Button>
         </Link>
       </div>
